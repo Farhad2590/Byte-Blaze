@@ -37,6 +37,7 @@ const router = createBrowserRouter([
         children : [
           {
             index:true,
+            
             element :<Content></Content>,
             loader : ({params}) => fetch(`https://dev.to/api/articles/${params.id}`),
           },
